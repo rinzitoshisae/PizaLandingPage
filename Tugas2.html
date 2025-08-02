@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kelas 11 Seru YYY</title>
+    <link rel="stylesheet" href="Tugass2.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .bg-header {
+            animation: bgSlider 16s infinite ease-in-out;
+            background-size: cover;
+            background-position: center;
+        }
+        .bg-shadow {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        @font-face {
+            font-family: 'Playball';
+            src: url('font/Playball/Playball-regular.ttf')
+        }
+        .Playball {
+            font-family: Playball;
+        }
+        @keyframes bgSlider {
+            0% {
+                background-image: url('src/Navbar.png');
+            }
+            25% {
+                background-image: url('src/piza2.jpeg');
+            }
+            50% {
+                background-image: url('src/piza4.jpg');
+            }
+            75% {
+                background-image: url('src/Navbar.png');
+            }
+            100% {
+                background-image: url('src/Navbar.png');
+            }
+        }
+        .animate-bgSlider {
+            animation: bgSlider 20s infinite ease-in-out;
+            background-size: cover;
+            background-position: center;
+        }
+        /* Fade In Up */
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .fade-in-up {
+            opacity: 0;
+            animation: fadeInUp 1s ease-out forwards;
+        }
+        /* Delay helpers */
+        .delay-100 {
+            animation-delay: 0.1s;
+        }
+        .delay-200 {
+            animation-delay: 0.2s;
+        }
+        .delay-300 {
+            animation-delay: 0.3s;
+        }
+        .delay-500 {
+            animation-delay: 0.5s;
+        }
+        .delay-700 {
+            animation-delay: 0.7s;
+        }
+    </style>
+</head>
+<body>
+
+    <!--NAVSEC SELESAI-->
+    <div id="navbar" class="w-full h-dvh animate-bgSlider">
+        <div class="bg-shadow w-full h-full p-6">
+            <div class="w-full flex flex-col items-center gap-6 md:flex-row md:justify-between md:gap-10">
+                <img src="src/LOGO.png" alt="logo" class="w-24 h-24 rounded-full md:w-32 md:h-32  fade-in-up delay-500">
+                <div
+                    class="text-white font-mono font-semibold text-sm flex flex-wrap justify-center gap-4 md:text-xl md:gap-10 fade-in-up">
+                    <a href="#menu" class="hover:text-red-300 transition-colors duration-300 cursor-pointer">menu</a>
+                    <a href="#menu" class="hover:text-red-300 transition-colors duration-300 cursor-pointer">catering
+                        menu</a>
+                    <a href="#footer"
+                        class="hover:text-red-300 transition-colors duration-300 cursor-pointer">contact</a>
+                    <a href="#footer"
+                        class="hover:text-red-300 transition-colors duration-300 cursor-pointer">hiring</a>
+                </div>
+                <div class="flex gap-5 justify-center mt-5 md:mt-0 fade-in-up">
+                    <a href="https://www.tiktok.com/@yahyafahmiabdillah" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" viewBox="0 0 24 24"
+                            class="hover:fill-yellow-300 transition duration-300">
+                            <path
+                                d="M12.23 2.01h3.18c.28 1.55 1.6 2.77 3.2 2.99v3.14a6.94 6.94 0 01-3.3-.86v6.91a5.84 5.84 0 11-5.84-5.84c.2 0 .4.01.6.04v3.21a2.64 2.64 0 00-1.24-.3 2.64 2.64 0 102.64 2.64V2.01z" />
+                        </svg>
+                    </a>
+
+                    <a href="https://instagram.com/yahyafahmiabdillah" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" viewBox="0 0 24 24"
+                            class="hover:fill-yellow-300 transition duration-300">
+                            <path
+                                d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.466.099 2.797.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.763v2.31h3.59l-.467 3.622h-3.123V24h6.116c.73 0 1.326-.597 1.326-1.326V1.326C24 .597 23.403 0 22.675 0z" />
+                        </svg>
+                    </a>
+
+                    <a href="https://instagram.com/yahyafahmiabdillah" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" viewBox="0 0 24 24"
+                            class="hover:fill-yellow-300 transition duration-300">
+                            <path
+                                d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm4.75-.88a1.12 1.12 0 110 2.25 1.12 1.12 0 010-2.25z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <!--NAVSEC SELESAI-->
+
+            <!--NAVBAR TENGAH-->
+            <div class="flex flex-col items-center text-center mt-0 md:mt-25">
+                <div class="Playball text-4xl text-orange-200 font-bold sm:text-5xl lg:text-6xl fade-in-up delay-100">
+                    Pizza</div>
+                <div class="text-5xl text-white font-bold font-serif mb-4 sm:text-6xl lg:text-7xl fade-in-up delay-300">
+                    DONE RIGHT</div>
+                <a href="#menu"
+                    class="bg-red-600 text-white font-semibold px-6 py-3 rounded-xl hover:bg-red-700 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl mt-4  hover:shadow-xl mt-4">
+                    Get Started
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--NAVBAR TENGAH SELESAI-->
+
+<!--LAUNCH SPESIAL-->
+    <div id="menu"
+        class="w-full bg-white px-4 py-10 md:py-14 md:px-16 flex flex-col-reverse md:flex-row items-center md:items-start justify-between gap-6 md:gap-20">
+        <!-- Text di sebelah kiri -->
+        <div class="w-full md:w-1/2 flex flex-col gap-4 text-">
+            <div class="text-red-600 text-3xl font-serif sm:text-4xl md:text-5xl">LAUNCH SPECIAL</div>
+            <p class="text-sm font sm:text-base">
+                <strong>2 potong pizza basi dengan irisan bawang basi <br> Dengan jus apel basi
+                    Rp.50.000</strong><br>
+                <span>PAJAK 100% (Tambahan jika anda mau kentang basi)</span>
+            </p>
+            <a href="#footer"
+                class="bg-red-500 text-center text-white font-bold py-2 px-6 w-fit hover:bg-red-700 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl">
+                Pelajari Lebih Lanjut
+            </a>
+        </div>
+        <!-- Gambar di sebelah kanan -->
+        <div class="w-full md:w-1/2 flex flex-row">
+            <img src="src/LOGO.png" alt="special launch" class="w-40 h-40 sm:w-56 sm:h-56 rounded-full object-cover">
+        </div>
+    </div>
+    <!--LAUNCH SPESIAL SELESAI-->
+
+    <!--ABOUT US-->
+    <div class="relative w-full h-[600px]">
+        <img src="src/Ppiza3.jpg" class="w-full h-full object-cover absolute inset-0 z-0" />
+        <div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/60 z-10"></div>
+        <div class="relative z-20 w-full h-full flex flex-col items-center justify-center text-white text-center px-4">
+            <h1 class="text-5xl font-bold p-5 m-5 font-serif">About Us</h1>
+            <p class="text-lg max-w-3xl font-extralight">
+                Pizza di tempat kami menyediakan berbagai macam rasa pizza yg akan membuat anda ketagihan dgn
+                kelezatan pizza basi nya tunggu apalagi? pesan sekarang !!!
+            </p>
+        </div>
+    </div>
+    <!--ABOUT US SELESAI-->
+
+<!--JAM BUKA-->
+    <div class="w-full bg-white p-20 flex flex-col items-center">
+        <h1 class="text-red-500 font-bold text-3xl font-moono mb-10 text-center">Jam Buka</h1>
+        <div class="flex flex-wrap justify-center gap-12 text-lg">
+            <p>Senin-seloso<br><strong>12Pm-1am</strong></p>
+            <p>Rebo<br><strong>13pm-3am</strong></p>
+            <p>Kemis<br><strong>7pm-12am</strong></p>
+            <p>Jumat<br><strong>8pm-12am</strong></p>
+            <p>sabtu<br><strong>6pm-1am</strong></p>
+            <p>minggu<br><strong>12pm-12am</strong></p>
+        </div>
+    </div>
+<!--JAM BUKA SELESAI-->
+
+<!--FOOTER-->
+    <footer id="footer" class="bg-red-600 relative text-white">
+        <div class="absolute top-0 left-0 w-full overflow-hidden leading-none">
+            <svg class="relative block w-full h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100"
+                preserveAspectRatio="none">
+                <path fill="#ffffff" d="M0,100 C360,0 1080,0 1440,100 L1440,0 L0,0 Z"></path>
+            </svg>
+        </div>
+        <div class="pt-12 pb-6 px-6 text-center">
+            <p class="text-lg font-semibold">Whole Cake Island</p>
+            <div class="mt-4 flex justify-center gap-8">
+                <a href="https://instagram.com/yahyafahmiabdillah" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-facebook-f hover:text-blue-400 transition-colors duration-300"></i></a>
+                <a href="https://instagram.com/yahyafahmiabdillah" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-instagram hover:text-blue-400 transition-colors duration-300"></i></a>
+            </div>
+            <nav class="mt-6 space-x-6 text-white text-sm sm:text-base">
+                <a href="#navbar" class="hover:text-yellow-300 transition-colors duration-300">HOME</a>
+                <a href="#menu" class="hover:text-yellow-300 transition-colors duration-300">MENU</a>
+                <a href="#menu" class="hover:text-yellow-300 transition-colors duration-300">CATERING MENU</a>
+                <a href="#footer" class="hover:text-yellow-300 transition-colors duration-300">HIRING</a>
+            </nav>
+            <p class="mt-4 text-sm">&copy; Charlotte Katakuri • All rights reserved • Design by Chatgpt keren Hehehe
+            </p>
+        </div>
+    </footer>
+    <!--FOOTER SELESAI-->
+</body>
+</html>
